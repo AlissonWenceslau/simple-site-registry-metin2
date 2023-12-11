@@ -47,15 +47,15 @@ session_start();
             ?>
             <div class="mb-3">
                 <label for="username" class="form-label">Login</label>
-                <input type="text" class="form-control" maxlength="12" placeholder="Máx 12 caracteres" pattern="[a-zA-Z0-9]+" aria-label="default input example" id="username" name="username" required>
+                <input type="text" class="form-control" maxlength="12" placeholder="Máximo 12 caracteres" pattern="[a-zA-Z0-9]+" aria-label="default input example" id="username" name="username" required>
                 <label for="exampleFormControlInput1" class="form-label">Endereço de Email</label>
                 <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="email" required>
                 <label for="password" class="form-label">Senha</label>
-                <input type="password" maxlength="25" class="form-control" placeholder="Máx 25 caracteres" pattern="[a-zA-Z0-9]+" id="password" name="password" required>
+                <input type="password" maxlength="25" class="form-control" placeholder="Máximo 25 caracteres" pattern="[a-zA-Z0-9]+" id="password" name="password" required>
                 <label for="password-confirm" class="form-label">Confirmar Senha</label>
-                <input type="password" maxlength="25" class="form-control" pattern="[a-zA-Z0-9]+" id="password-confirm" name="password-confirm" required>
+                <input type="password" maxlength="25" class="form-control" placeholder="Máximo 25 caracteres" pattern="[a-zA-Z0-9]+" id="password-confirm" name="password-confirm" required>
                 <label for="password-character" class="form-label">Senha do Personagem</label>
-                <input class="form-control" maxlength="7" type="text" pattern="[a-zA-Z0-9]+" placeholder="Máx 7 caracteres" aria-label="default input example" id="password-character" name="character" required>
+                <input class="form-control" maxlength="7" type="text" pattern="[a-zA-Z0-9]+" placeholder="Máximo 7 caracteres" aria-label="default input example" id="password-character" name="character" required>
                 <button type="submit" class="btn btn-success mt-3">Cadastrar</button>
             </div>
         </form>
