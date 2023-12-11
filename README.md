@@ -7,8 +7,10 @@ Este é um webpage simples desenvolvido por mim, que conta com um formulário pa
 
 ![image](https://github.com/AlissonWenceslau/simple-site-registry-metin2/assets/74499967/8df140e5-cb10-46eb-ab85-4f41b498e1af)
 
-## Configurando website
+## Configurando webpage
 Para que o webpage envie repostas ao servidor, é preciso abrir o arquivo **'conn.php'** e colocar o **ip do servidor, usuário e senha MYSQL.**
+![image](https://github.com/AlissonWenceslau/simple-site-registry-metin2/assets/74499967/fb58e724-49ec-4c35-becc-4f5b7925051a)
+
 
 ## Créditos
 [Alisson Wenceslau](https://www.youtube.com/@alissonwenceslau)
