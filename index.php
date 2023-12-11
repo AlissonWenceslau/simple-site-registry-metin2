@@ -21,7 +21,7 @@ session_start();
         </div>
     </nav>
     <div class="col-lg-6 offset-lg-3">
-        <form method="post" action="./registry.php">
+        <form method="post" action="./register.php">
             <h2>Cadastro</h2>
             <?php 
              if(isset($_SESSION['error_password'])){
