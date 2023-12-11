@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
     $password = test_input($_POST['password']);
     $confirm_password = test_input($_POST['password-confirm']);
     $social_id = test_input($_POST['character']);
-    $email = test_input($_POST['email']);
+    $email = $_POST['email'];
 }
 
 function test_input($data) {
