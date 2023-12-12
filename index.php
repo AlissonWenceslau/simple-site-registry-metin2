@@ -11,13 +11,9 @@ session_start();
     <link href="./css/bootstrap.min.css" rel="stylesheet">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" th:fragments="nav">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand"><img src="./assets/metin2.png" class="img-fluid" alt="..." width="80px" height="80px"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
         </div>
     </nav>
     <div class="col-lg-6 offset-lg-3">
@@ -49,17 +45,22 @@ session_start();
                 <label for="username" class="form-label">Login</label>
                 <input type="text" class="form-control" maxlength="12" placeholder="Máximo 12 caracteres" pattern="[a-zA-Z0-9]+" aria-label="default input example" id="username" name="username" required>
                 <label for="exampleFormControlInput1" class="form-label">Endereço de Email</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="email" required>
+                <input type="email" maxlength="50" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="email" required>
                 <label for="password" class="form-label">Senha</label>
-                <input type="password" maxlength="25" class="form-control" placeholder="Máximo 25 caracteres" pattern="[a-zA-Z0-9]+" id="password" name="password" required>
+                <input type="password" maxlength="12" class="form-control" placeholder="Máximo 12 caracteres" pattern="[a-zA-Z0-9]+" id="password" name="password" required>
                 <label for="password-confirm" class="form-label">Confirmar Senha</label>
-                <input type="password" maxlength="25" class="form-control" placeholder="Máximo 25 caracteres" pattern="[a-zA-Z0-9]+" id="password-confirm" name="password-confirm" required>
+                <input type="password" maxlength="12" class="form-control" placeholder="Máximo 12 caracteres" pattern="[a-zA-Z0-9]+" id="password-confirm" name="password-confirm" required>
                 <label for="password-character" class="form-label">Senha do Personagem</label>
                 <input class="form-control" maxlength="7" type="text" pattern="[a-zA-Z0-9]+" placeholder="Máximo 7 caracteres" aria-label="default input example" id="password-character" name="character" required>
                 <button type="submit" class="btn btn-success mt-3">Cadastrar</button>
             </div>
         </form>
     </div>
+    <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50 fixed-bottom">
+      <div class="container text-center">
+        <small>Copyright &copy; <?php echo date("Y"); ?></small>
+      </div>
+    </footer>
     <script src="./script/bootstrap.bundle.min.js"></script>
   </body>
 </html>
