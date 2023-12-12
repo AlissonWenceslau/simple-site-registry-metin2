@@ -5,7 +5,7 @@ Este é um webpage responsivo simples desenvolvido por mim, que conta com um for
 - [x] Mysql
 - [x] Bootstrap
 
-![image](https://github.com/AlissonWenceslau/simple-site-registry-metin2/assets/74499967/eebb736d-55bb-470e-bbac-549ab3afcb8d)
+![image](https://github.com/AlissonWenceslau/simple-site-registry-metin2/assets/74499967/496d685f-8aaa-49d0-8f91-d36662e5bcf1)
 
 ## Configurando webpage
 Para que o webpage envie repostas ao servidor, é preciso abrir o arquivo **'conn.php'** e colocar o **ip do servidor, usuário e senha MYSQL.**
