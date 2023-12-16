@@ -6,14 +6,14 @@ session_start();
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/x-icon" href="/assets/metin2.png">
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
     <title>Metin2 - Simple Page</title>
     <link href="./css/bootstrap.min.css" rel="stylesheet">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand"><img src="./assets/metin2.png" class="img-fluid" alt="..." width="80px" height="80px"></a>
+            <a class="navbar-brand"><img src="./assets/metin2.png" class="img-fluid" alt="metin2"></a>
         </div>
     </nav>
     <div class="col-lg-6 offset-lg-3">
@@ -56,7 +56,7 @@ session_start();
             </div>
         </form>
     </div>
-    <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50 fixed-bottom">
+    <footer id="sticky-footer" class="flex-shrink-0 py-3 bg-dark text-white-50 fixed-bottom">
       <div class="container text-center">
         <small>Copyright &copy; <?php echo date("Y"); ?></small>
       </div>
