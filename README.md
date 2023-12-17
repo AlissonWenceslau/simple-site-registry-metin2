@@ -1,6 +1,6 @@
 # METIN2  SIMPLE WEBPAGE
 Este é um webpage responsivo simples desenvolvido por mim, que conta com um formulário para registros de contas para servidor de metin2.
-## Técnologia
+## Tecnologia
 - [x] PHP 8+
 - [x] Mysql
 - [x] Bootstrap
