@@ -16,7 +16,7 @@ session_start();
             <a class="navbar-brand"><img src="./assets/metin2.png" class="img-fluid" alt="metin2"></a>
         </div>
     </nav>
-    <div class="col-lg-6 offset-lg-3 h-100">
+    <div class="col-lg-6 offset-lg-3">
         <form method="post" action="./register.php">
             <h2>Cadastro</h2>
             <?php 
