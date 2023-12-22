@@ -16,7 +16,7 @@ session_start();
             <a class="navbar-brand"><img src="./assets/metin2.png" class="img-fluid" alt="metin2"></a>
         </div>
     </nav>
-    <div class="col-lg-6 offset-lg-3">
+    <div class="col-lg-6 offset-lg-3 h-100">
         <form method="post" action="./register.php">
             <h2>Cadastro</h2>
             <?php 
@@ -56,7 +56,7 @@ session_start();
             </div>
         </form>
     </div>
-    <footer id="sticky-footer" class="flex-shrink-0 py-3 bg-dark text-white-50 fixed-bottom">
+    <footer id="sticky-footer" class="flex-shrink-0 py-3 bg-dark text-white-50">
       <div class="container text-center">
         <small>Copyright &copy; <?php echo date("Y"); ?></small>
       </div>
