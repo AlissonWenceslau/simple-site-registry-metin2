@@ -1,6 +1,8 @@
 <?php include 'conn.php';
 session_start();
 
+$errors = [];
+
 if ($_SERVER["REQUEST_METHOD"] == "POST"){
     $username = test_input($_POST['username']);
     $password = test_input($_POST['password']);
@@ -25,15 +27,29 @@ $sql = "INSERT INTO account (login, password, social_id, email) VALUES ('$userna
 $conn = mysqli_connect($ip_db, $user_db, $password_db, $database);
 
 try{
+    if (strlen($username) < 5 || strlen($username) > 12) {
+        $errors[] = 'Login precisa conter no mínimo 5 caracteres e no máximo 12';
+    }
 
     if (strcmp($password, $confirm_password) !== 0) {
-        $_SESSION['error_password'] = "Confirmação de senha da conta incorreta, tente novamente...";
-        header("location: index.php");
-        return;
+        $errors[] = 'As senha não coincidem';
+    }
+
+    if(strlen($password)< 5){
+        $errors[] = 'A senha precisa conter no mínimo 5 caracteres e no máximo 12';
+    }
+
+    if(strlen($social_id)<7){
+        $errors[] = 'Senha do personagem precisa conter 7 caracteres';
+    }
+    if(count($errors) > 0){
+        $_SESSION['errors'] = $errors;
+        header('Location: index.php');
+        exit();
     }
 
     if (mysqli_query($conn, $sql)) {
-        $_SESSION['status'] = "Cadastro realizado com sucesso!";
+        $_SESSION['success'] = "Cadastro realizado com sucesso!";
         header("location: index.php");
     } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($conn);
