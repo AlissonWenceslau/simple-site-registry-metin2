@@ -49,7 +49,7 @@ try{
     }
 
     if (mysqli_query($conn, $sql)) {
-        $_SESSION['success'] = "Cadastro realizado com sucesso!";
+        $_SESSION['success'] = "Sua conta foi criada com sucesso!";
         header("location: index.php");
     } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($conn);
