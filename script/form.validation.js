@@ -18,3 +18,10 @@
         }, false)
       })
   })()
+
+setTimeout(function() {
+  var mensagensErro = document.querySelectorAll('.alert-success');
+  mensagensErro.forEach(function(mensagem) {
+    mensagem.style.display = 'none';
+  });
+}, 5000);

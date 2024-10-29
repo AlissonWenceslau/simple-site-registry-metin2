@@ -28,7 +28,7 @@ $conn = mysqli_connect($ip_db, $user_db, $password_db, $database);
 
 try{
     if (strlen($username) < 5 || strlen($username) > 12) {
-        $errors[] = 'Login precisa conter no mínimo 5 caracteres e no máximo 12';
+        $errors[] = 'Login precisa conter no mínimo 5 e no máximo 12 caracteres';
     }
 
     if (strcmp($password, $confirm_password) !== 0) {
@@ -36,7 +36,7 @@ try{
     }
 
     if(strlen($password)< 5){
-        $errors[] = 'A senha precisa conter no mínimo 5 caracteres e no máximo 12';
+        $errors[] = 'A senha precisa conter no mínimo 5 e no máximo 12 caracteres';
     }
 
     if(strlen($social_id)<7){
