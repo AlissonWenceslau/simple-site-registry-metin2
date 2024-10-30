@@ -25,3 +25,14 @@ setTimeout(function() {
     mensagem.style.display = 'none';
   });
 }, 5000);
+
+var checkBoxTerms = document.querySelector('.form-check-input')
+var submitButton = document.querySelector('#submit')
+
+checkBoxTerms.addEventListener('click',()=>{
+  if(checkBoxTerms.checked){
+    submitButton.disabled = false;
+  }else{
+    submitButton.disabled = true;
+  }
+})

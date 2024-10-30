@@ -90,7 +90,32 @@ session_start();
               Campo obrigatório!
             </div>
           </div>
-          <button type="submit" class="btn btn-success w-100 mb-2">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Termos de Uso
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <ol>
+                    <li>Proibido usar hack - <strong><small>BANIMENTO PERMANENTE</small></strong></li>
+                    <li>Proibido se passar por GM - <strong><small>BANIMENTO PERMANENTE</small></strong></li>
+                    <li>Proibido insultar os jogadores - <strong><small>BANIMENTO DE 7 DIAS</small></strong></li>
+                    <small><strong>Caso o administrador identifique qualquer outra situação que impacte na dinamica e jogabilidade do servidor, será aplicada uma penalização aos jogadores envolvidos!</strong></small>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-check mt-2 mb-2">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Estou ciente dos termos acima
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary w-100 mb-2 mt-2" disabled id="submit">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill-add" viewBox="0 0 16 16">
               <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0m-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
               <path d="M2 13c0 1 1 1 1 1h5.256A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1 1.544-3.393Q8.844 9.002 8 9c-5 0-6 3-6 4" />
