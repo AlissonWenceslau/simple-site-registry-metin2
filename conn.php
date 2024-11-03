@@ -1,6 +1,6 @@
 <?php
-    $ip_db = 'IP DO SEU SERVIDOR';
-    $user_db = 'USUÁRIO DO BANCO DE DADOS';
-    $password_db = 'SENHA DO BANCO DE DADOS';
-    $database = 'account'; //Não alterar
+    $servername = 'IP DO SERVIDOR';
+    $username = 'USUÁRIOS DO BANCO DE DADOS';
+    $password = 'SENHA DO BANCO DE DADOS';
+    $dbaccount = 'account'; //Não alterar
 ?>
