@@ -2,7 +2,7 @@
 session_start();
 ?>
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="utf-8">
@@ -25,6 +25,7 @@ session_start();
         <li class="nav-item">
           <a class="nav-link" href="download.php">Download</a>
         </li>
+      </ul>
     </div>
   </nav>
   <div class="content">

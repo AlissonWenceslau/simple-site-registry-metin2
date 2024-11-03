@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="utf-8">
@@ -22,6 +22,7 @@
         <li class="nav-item">
           <a class="nav-link active" href="download.php">Download</a>
         </li>
+      </ul>
     </div>
   </nav>
   <div class="content">
