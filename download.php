@@ -22,6 +22,9 @@
         <li class="nav-item">
           <a class="nav-link active" href="download.php">Download</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ranking.php">Ranking</a>
+        </li>
       </ul>
     </div>
   </nav>
@@ -80,7 +83,7 @@
   </div>
   <footer id="sticky-footer" class="flex-shrink-0 py-3 bg-dark text-white-50">
     <div class="container text-center">
-      <small>Copyright &copy; <?php echo date("Y"); ?></small>
+    <small>Todos os direitos reservados! Copyright &copy; <?php echo date("Y"); ?></small>
     </div>
   </footer>
   <script src="./script/bootstrap.bundle.min.js"></script>
