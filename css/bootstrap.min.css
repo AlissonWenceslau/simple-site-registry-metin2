@@ -13,8 +13,14 @@ body {
 
 .content {
     flex: 1;
+    justify-content: center;
 }
 
 .logo{
     margin-left: 5px;
+}
+
+.pagination{
+    letter-spacing: 5px;
+    font-size: 20px;
 }

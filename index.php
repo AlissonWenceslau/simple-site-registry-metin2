@@ -116,7 +116,7 @@ session_start();
           <div class="form-check mt-2 mb-2">
             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
             <label class="form-check-label" for="flexCheckDefault">
-              Estou ciente dos termos acima
+              Estou ciente e aceito os termos acima
             </label>
           </div>
           <button type="submit" class="btn btn-primary w-100 mb-2 mt-2" disabled id="submit">
