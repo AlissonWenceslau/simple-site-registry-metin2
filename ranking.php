@@ -32,7 +32,7 @@ $players = $stmt->fetchAll(PDO::FETCH_ASSOC);
 $total = $pdo->query("SELECT COUNT(*) FROM $dbplayer.player")->fetchColumn();
 $paginas = ceil($total / $por_pagina);
 
-
+$offset = ($pagina -1) * $por_pagina;
 
 function pgClass($job)
 {
@@ -115,14 +115,15 @@ function pgKingdom($kingdom)
                     <?php
                     $count = 0;
                     // Saída dos dados de cada linha
-                    foreach ($players as $player) {
+                    foreach ($players as $player => $row) {
+                        $position = $offset + $player +1;
                         echo "<tr>";
-                        echo "<th scop='row'>" . $count += 1 . "</th>";
-                        echo "<td>" . pgClass($player['job']) . "</td>";
-                        echo "<td>" . $player["name"] . "</td>";
-                        echo "<td>" . $player["level"] . "</td>";
-                        echo "<td>" . $player["exp"] . "</td>";
-                        echo "<td>" . pgKingdom($player["empire"]) . "</td>";
+                        echo "<th scop='row'>" . $position . "</th>";
+                        echo "<td>" . pgClass($row['job']) . "</td>";
+                        echo "<td>" . $row["name"] . "</td>";
+                        echo "<td>" . $row["level"] . "</td>";
+                        echo "<td>" . $row["exp"] . "</td>";
+                        echo "<td>" . pgKingdom($row["empire"]) . "</td>";
                         echo "</tr>";
                     }
 
