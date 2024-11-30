@@ -74,7 +74,7 @@ function pgKingdom($kingdom)
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon.ico">
     <title>Metin2</title>
     <link href="./css/bootstrap.min.css" rel="stylesheet">
 </head>
