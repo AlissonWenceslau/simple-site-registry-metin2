@@ -1,8 +1,8 @@
 <?php
-    $servername = 'IP DO SEU SERVIDO';
-    $username = 'USUÁRIO DO BANDO DE DADOS';
-    $password = 'SENHA DO BANCO DE DADOS';
+    $servername = 'SERVER IP';
+    $username = 'DATABASE USER';
+    $password = 'PASSWORD';
     $dbaccount = 'account'; //Não alterar
-    $dbplayer = "player";   //Não alterar
-    $dbcommon = "common";   //Não alterar
+    $dbplayer = 'player';   //Não alterar
+    $dbcommon = 'common';   //Não alterar
 ?>
